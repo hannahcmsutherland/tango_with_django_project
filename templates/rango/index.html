@@ -18,7 +18,6 @@ Homepage
         <ul>
         {% for category in categories %}
             <li><a href="{% url 'rango:show_category' category.slug %}">{{ category.name }}</a></li>
-            <p>Visits: {{ visits }}</p>
         {% endfor %}
         </ul>
     {% else %}
